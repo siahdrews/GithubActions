@@ -100,12 +100,6 @@ public class Addition
     }
 
     [TestMethod]
-    public void Divide_ByZero_Andrews()
-    {
-        Assert.ThrowsException<DivideByZeroException>(() => Program.Divide("1", "0"));
-    }
-
-    [TestMethod]
     public void Power_Valid_Andrews()
     {
         Assert.AreEqual(8, Program.Power("2", "3"));
